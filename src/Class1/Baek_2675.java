@@ -2,20 +2,15 @@ package Class1;
 
 /* 문자열 반복 */
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 
 public class Baek_2675 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         // 입력받을 테스트케이스의 수
         int testcase = Integer.parseInt(br.readLine());
-        //
-        StringBuilder sb = new StringBuilder();
-
-
         // 테스트케이스의 수 만큼 반복
         for (int i=0; i<testcase; i++) {
             // " "로 구분한 입력값 받기
@@ -30,11 +25,13 @@ public class Baek_2675 {
                 for(int k=0; k<a; k++) {
                     // str 의1번째 인덱스를 1글자씩 a번 반복출력
                     // a는 str의 0번째 인덱스 = 문자열 반복횟수
-                    sb.append(A.charAt(j));
+                    bw.write(A.charAt(j));
                 }
             }
-            System.out.println(sb);
+            bw.write("\n");
         }
         br.close();
+        bw.flush();
+        bw.close();
     }
 }
