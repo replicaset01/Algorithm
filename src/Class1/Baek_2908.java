@@ -1,9 +1,9 @@
 package Class1;
 
+/* 상수 */
+
 import java.io.*;
 import java.util.StringTokenizer;
-
-/* 상수 */
 
 public class Baek_2908 {
     public static void main(String[] args) throws IOException {
