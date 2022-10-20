@@ -37,7 +37,7 @@ public class Baek_2577 {
         int a = Integer.parseInt(br.readLine());
         int b = Integer.parseInt(br.readLine());
         int c = Integer.parseInt(br.readLine());
-        // 합의 길이를 이용해 순회하기 위해 String으로 변환
+        // 곱한값의 길이를 이용해 순회하기 위해 String으로 변환후
         String str = Integer.toString(a*b*c);
 
         // str의 길이만큼 모든요소검사, (해당 인덱스의 문자 == i)
