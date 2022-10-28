@@ -1,7 +1,5 @@
 package DaliyCoding;
 
-import java.util.*;
-
 public class Daily_25 {
     public long power(int base, int exponent) {
         //재귀함수로 동작합니다.
