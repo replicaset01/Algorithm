@@ -1,5 +1,8 @@
 package DaliyCoding;
-
+/*
+정수를 요소로 갖는 배열을 입력받아 오름차순으로 정렬하여 리턴해야 합니다.
+버블 정렬(bubble sort)은 여러 정렬 알고리즘(삽입 정렬, 퀵 정렬, 병합 정렬, 기수 정렬 등) 중 가장 기본적인 알고리즘입니다.
+ */
 public class Daily_22 {
     public int[] swap(int idx1, int idx2, int[] arr) {
         //두 변수를 바꾸는 방법

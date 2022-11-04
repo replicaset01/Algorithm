@@ -1,5 +1,7 @@
 package DaliyCoding;
-
+/*
+두 개의 배열(base, sample)을 입력받아 sample이 base의 부분집합인지 여부를 리턴해야 합니다.
+ */
 import java.util.List;
 import java.util.Arrays;
 import java.util.stream.Collectors;

@@ -1,20 +1,24 @@
 package DaliyCoding;
 /*
 임의의 tree를 구성하는 노드 중 하나의 Node 객체를 입력받아,
-해당 노드를 시작으로 깊이 우선 탐색(DFS, Depth First Search)을 합니다.
+해당 노드를 시작으로 너비 우선 탐색(BFS, Breadth First Search)을 합니다.
 이 때, 탐색되는 순서대로 노드의 값이 저장된 배열을 리턴
  */
 import java.util.*;
 
-public class Daily_26 {
-    public ArrayList<String> dfs(tree node) {
+public class Daily_27 {
+    public ArrayList<String> bfs(tree node) {
+        Queue<tree> queue = new LinkedList<>();
         ArrayList<String> values = new ArrayList<>();
-        values.add(node.getValue());
+        queue.add(node);
 
-        if(node.getChildrenNode() != null) {
-            for(int i = 0; i < node.getChildrenNode().size(); i++) {
-                ArrayList<String> curList = dfs(node.getChildrenNode().get(i));
-                values.addAll(curList);
+        while(queue.size() > 0) {
+            tree curNode = queue.poll();
+
+            values.add(curNode.getValue());
+
+            if(curNode.getChildrenNode() != null) {
+                queue.addAll(curNode.getChildrenNode());
             }
         }
         return values;

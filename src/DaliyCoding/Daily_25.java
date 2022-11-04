@@ -1,5 +1,7 @@
 package DaliyCoding;
-
+/*
+두 수를 입력받아 거듭제곱을 리턴해야 합니다
+ */
 public class Daily_25 {
     public long power(int base, int exponent) {
         //재귀함수로 동작합니다.
