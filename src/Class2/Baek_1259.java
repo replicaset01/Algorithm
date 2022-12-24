@@ -11,9 +11,10 @@ public class Baek_1259 {
             String arr = br.readLine();
 
             if (arr.equals("0")) break;
-            // 입력받은 문자의 중간까지 반복
+
+            //i 입력받은 문자의 중간까지 반복
             for (int i=0; i<arr.length()/2; i++) {
-            // 앞뒤가 다르면 false
+            //i 앞뒤가 다르면 false
                 if (arr.charAt(i) != arr.charAt(arr.length() - 1 - i)) {
                     result = false;
                     break;

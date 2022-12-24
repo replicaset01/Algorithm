@@ -13,6 +13,7 @@ public class Baek_4153 {
         StringBuffer sb = new StringBuffer();
 
         while (true) {
+
             StringTokenizer st = new StringTokenizer(br.readLine(), " ");
             //i 세 변 입력받음
             int x = Integer.parseInt(st.nextToken());

@@ -16,7 +16,7 @@ public class Baek_2609 {
         br.close();
     }
 
-    // 최대 공배수
+    //i 최대 공배수
     public static int gcd(int a, int b) {
         while (b != 0) {
             int r = a % b;
@@ -26,7 +26,7 @@ public class Baek_2609 {
         return a;
     }
 
-    //최소 공배수
+    //i 최소 공배수
     public static int lcm(int a, int  b) {
         return a * b / gcd(a, b);
     }
